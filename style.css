@@ -5,7 +5,8 @@
     padding : 0;
  }
  body{
-    background: rgb(247, 247, 247)
+    background: rgb(247, 247, 247);
+    
  }
 button{
     cursor: pointer;
@@ -296,7 +297,175 @@ color: rgb(32, 32, 32);
 
 }
 
- @media (max-width: 576px) {
+#stories{ 
+    background: url(assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    display: flex;
+    flex-direction  : column;
+    align-items: center;
+    gap : 80px;
+    padding-left : 50px;
+}
+#stories .title{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 57.5px;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+.story-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding :  0 50px;
+}
+.story1, .story2,.story3,.story4,.story5{
+    display: flex;
+    flex-direction: column;
+    
+}
+.story1{
+    
+    grid-row: span 2;
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    max-width: 100%;
+    
+}
+.story-container img{
+    border-radius: 16px 16px 0 0;
+}
+
+.story1 .date{
+    margin : 0 100px;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    display: inline-block;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: 36px;
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top : 10px;
+
+
+}
+.story1 .content{
+    padding :  0 20px;
+}
+.story1 .subtitle{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-bottom: 30px;
+
+}
+.story1 p{
+    color: rgb(102, 102, 102);
+    font-family: Quicksand;
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+.story-right{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap : 15px;
+    padding : 0 50px 0 0;
+}
+.story-right .subtitle{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 15.34px;
+    font-weight: 700;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+.story-right .date{    
+    margin : 0 100px;
+    border-radius: 47.93px;
+    background: rgb(60, 216, 232);
+    display: inline-block;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: 32px;
+    text-align: center;
+    
+    color: rgb(255, 255, 255);
+
+    font-size: 15.34px;
+    font-weight: 500;
+    line-height: 28.76px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    padding-top : 5px;
+    
+}
+.story2,.story3,.story4,.story5{
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+    padding-bottom: 15px;
+}
+.story-right .content {
+    padding : 15px;
+}
+#stories button{
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 197px;
+    height: 50px;
+
+}
+.story3 .date, .story4 .date,.story5 .date{
+    border-radius: 47.93px;
+
+    background: rgb(149, 178, 38);
+}
+.story2 .date{
+    border-radius: 47.93px;
+
+background: rgb(93, 88, 240);
+}
+#stories{
+    padding-bottom : 60px;
+    padding-top : 60px;
+}
+
+ 
+
+
+
+@media (max-width: 576px) {
     body{
         margin : 0px;
         text-align: center;
@@ -429,8 +598,37 @@ color: rgb(32, 32, 32);
         font-weight: 700;
         line-height: 19.16px;
     }
+    #stories .story1{
+        display: none;
+    }
+    .story-right{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .story2,.story3,.story4,.story5{
+        width: 172px;
+        height: 180px;
+        
+    }
+    .story-right .date{
+        width: 100px;
+        height: 18px;
+        font-size: 9px;
+        padding-bottom : 10px;
+        
 
-    
+    }
+    .story-right .subtitle{
+        color: rgb(0, 0, 0);
+        font-family: Quicksand;
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 17.12px;
+        letter-spacing: 0%;
+        text-align: left;
+        
+
+    }
 
 
 
