@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+ *{
+    font-family: Quicksand;
+    /* White */
+    
+    margin : 0;
+    padding : 0;
+ }
+ body{
+    background: rgb(247, 247, 247);
+ }
+
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+    
+ }
+.menu{
+    display: none;
+} 
+#nav .img-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap : 10px;
+    
+}
+.img-container img{
+    width: 80px;
+}
+#nav .title{
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    
+}
+
+#nav .links{ 
+    width: 387px;
+    height: 30px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 32px;
+    padding: 0px;
+    list-style-type: none ;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    
+    
+ }
+ .link1{
+    color: rgb(254, 163, 1);
+ }
+ .link2{
+    color: rgb(1, 172, 253);
+ }
+ .link3{
+    color: rgb(5, 212, 223);
+ }
+ .link4{
+    color: rgb(93, 88, 239);
+ }
+
+ #nav button{
+    width: 197px;
+    height: 50px;
+    border-radius: 12px;
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: center;
+    border: none;
+
+ }
+
+ #banner .banner-container{
+    display : flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding : 122px;
+
+ }
+ #banner .left{
+    max-width : 50%;
+    display: flex;
+    flex-direction: column;
+    gap : 4vh;
+ }
+ #banner .right img{
+    max-width : 50%;
+    height : auto;
+ }
+#banner h1{
+font-family: Quicksand;
+font-size: 60px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: 0%;
+text-align: left;
+}
+.orange{
+    color: rgb(254, 163, 1);
+}
+.blue{
+    color : rgb(1, 172, 253);
+}
+#banner button{
+    border-radius: 12px;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 197px;
+    height: 50px;
+
+}
+#banner p{
+    color: rgb(17, 17, 17);
+font-family: Quicksand;
+font-size: 32px;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+ @media (max-width: 576px) {
+    body{
+        margin : 0px;
+        text-align: center;
+        
+        
+    }
+    .nav-links {
+        display: none;
+    }
+
+    #nav .menu {
+        display: block;
+        font-size: 30px;
+        padding : 10px;
+        text-decoration: none;
+        cursor : pointer;
+       
+    }
+
+    #nav h1,#nav ul,#nav li,#nav button{
+        display : none;
+    }
+    #nav{
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+        width : 576px;
+        justify-content: left;
+    }
+   
+    .banner-container{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding : 0px;
+        text-align: center;
+    
+    }
+    #banner .left{
+        justify-content: center;
+        max-width : 100%;
+        align-items: center;
+
+    }
+    #banner .right{
+        width : 100%;
+        max-width : 400px;
+        height: auto;
+        display: block;
+    }
+    #banner img{
+        width: 336.58px;
+        height: 413px;
+    }
+    #banner h1{
+        font-family: Quicksand;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    #banner p{
+        color: rgb(17, 17, 17);
+        font-family: Quicksand;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+    #banner button{
+        border-radius: 8px;
+        background: rgb(17, 17, 17);color: rgb(255, 255, 255);
+        font-family: Quicksand;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0%;
+        text-align: center;
+        width: 131px;
+        height: 42px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+ }
