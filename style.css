@@ -4,6 +4,14 @@
     margin : 0;
     padding : 0;
  }
+ html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+ marquee{
+    behavior: scroll;
+    direction:left;
+ }
  body{
     background: rgb(247, 247, 247);
     
@@ -461,6 +469,107 @@ background: rgb(93, 88, 240);
     padding-top : 60px;
 }
 
+#footer{
+    background: rgb(1, 172, 253);
+    display: grid;
+    grid-template-columns: 1fr repeat(2,1fr);
+    gap : 20px;
+    text-align: left;
+    max-width: 100%;
+    
+    padding : 150px;
+
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    gap : 20px;
+    padding-right:80px;;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+.parent img{
+     width :110px;
+}
+
+.col1 h1{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 52px;
+font-weight: 700;
+line-height: 45px;
+letter-spacing: 0%;
+text-align: left;
+}
+.col1 p{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 400;
+line-height: 25px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+.col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap : 30px;
+    padding-left: 90px;
+}
+.col2 h1{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+
+}
+.col2 li{
+    text-decoration: none;
+    list-style : none;
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 20px;
+font-weight: 500;
+line-height: 50px;
+letter-spacing: 0%;
+text-align: left;
+
+
+}
+.col3{
+    display : flex;
+    flex-direction: column;
+    gap : 32px;
+    padding-left : 40px;
+}
+.img-container{
+    display: flex;
+    flex-wrap: row;
+    gap : 10px;
+}
+.col3 img{
+    width : 40px;
+    height : auto;
+}
+.col3 h1{
+    color: rgb(255, 255, 255);
+font-family: Quicksand;
+font-size: 26px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+}
+
+
  
 
 
@@ -469,19 +578,30 @@ background: rgb(93, 88, 240);
     body{
         margin : 0px;
         text-align: center;
+
         
         
     }
+    .nav-container {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        padding: 10px;
+        gap: 10px;
+        width: 100%;
+    }
+    
     .nav-links {
         display: none;
     }
 
     #nav .menu {
-        display: block;
+        display:block;
         font-size: 30px;
-        padding : 10px;
         text-decoration: none;
         cursor : pointer;
+        padding-left : 330px;
+        
        
     }
 
@@ -491,7 +611,7 @@ background: rgb(93, 88, 240);
     #nav{
         border-bottom: 0.5px solid rgb(254, 163, 1);
         width : 576px;
-        justify-content: left;
+        
     }
    
     .banner-container{
@@ -505,6 +625,7 @@ background: rgb(93, 88, 240);
     }
     #banner{
         padding : 20px 0;
+        max-width : 576px;
     }
     #banner .left{
         justify-content: center;
@@ -514,7 +635,7 @@ background: rgb(93, 88, 240);
     }
     #banner .right{
         width : 100%;
-        max-width : 400px;
+        max-width : 576px;
         height: auto;
         display: block;
     }
@@ -627,6 +748,49 @@ background: rgb(93, 88, 240);
         letter-spacing: 0%;
         text-align: left;
         
+
+    }
+    #footer{
+        display: flex;
+        flex-direction: column;
+        padding : 40px 15px;
+        max-width: 576px;
+        
+    }
+    .col1, .col2, .col3 {
+        padding : 10px;
+    }
+    .col1 h1{
+        
+        font-size: 35.73px;
+        font-weight: 700;
+        line-height: 33.5px;
+    }
+    .col1 p{
+        font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+    }
+    .col2 h1{
+        
+        font-size: 20.35px;
+        font-weight: 600;
+        line-height: 25px;
+       
+
+    }
+    .col2 li{
+        font-size: 16.96px;
+font-weight: 500;
+line-height: 21px;
+    }
+    .col3 h1{
+        font-size: 22.04px;
+font-weight: 700;
+line-height: 22.04px;
+    }
+    .col3 img{
+        width : 33px;
 
     }
 
