@@ -722,6 +722,9 @@ text-align: left;
         font-weight: 700;
         line-height: 19.16px;
     }
+    .card1, .card2, .card3{
+        width : 93%;
+    }
     #stories .story1{
         display: none;
     }
